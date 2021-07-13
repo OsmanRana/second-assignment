@@ -8,7 +8,7 @@ body {
     padding: 0;
     width: 1440px;
     height: 3750px;
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: rgba(236, 235, 235, 0.5);
 }
 Header {
     width: 1440px;
@@ -128,4 +128,23 @@ Header {
 .sub-image-a img {
     width: 513px;
     height: 413px;
+}
+
+/*------------------------
+        Footer
+------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 480px;
+    height: 110px;
+}
+.social-icon i {
+    width: 32px;
+    height: 32px;
 }
