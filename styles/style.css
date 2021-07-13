@@ -37,7 +37,7 @@ Header {
     font-weight: 700;
     color: white;
 }
-.watch {
+.watch-live {
     font-size: 16px;
     font-weight: 500;
     color: white;
@@ -95,3 +95,37 @@ Header {
 /*------------------------
         Sub Sections 
 ------------------------*/
+
+.sub-section {
+    display: flex;
+    width: 1050px;
+    height: 413px;
+    justify-content: space-between;
+    margin: 0px 195px 158px 195px;
+}
+.sub-section-a {
+    width: 466px;
+    height: 309px;
+}
+.sub-heading-a {
+    font-size: 48px;
+    font-weight: 700;
+}
+.sub-section-a-description {
+    font-size: 16px;
+    font-weight: 400;
+}
+.watch-now {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    
+}
+.sub-image-a img {
+    width: 513px;
+    height: 413px;
+}
