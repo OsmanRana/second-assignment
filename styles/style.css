@@ -15,6 +15,12 @@ Header {
     height: 677px;
     background-color: #2D25A0;
 }
+.button {
+    display: inline-block;
+    width: 168px;
+    height: 22px;
+    background-color: #E02C6D;    
+} 
 
 /*------------------------
     Head/Top Section 
@@ -37,23 +43,26 @@ Header {
     font-weight: 700;
     color: white;
 }
+
 .watch-live {
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     color: white;
-    width: 168px;
-    height: 44px;
-    background-color: #E02C6D;
-    border: none;
+    text-align: center;
     margin-top: 27px;
+    padding: 11px 0;
 }
 .fa-arrow-right {
     padding-left: 20px;
 }
 .main-image img {
     width: 556px;
-    height: 456px;
-    
+    height: 456px;   
+}
+.main-image img:hover {
+    transform:  scale(.25, .25) rotate(360deg);
+    transition: transform 8s ease-in-out ;
 }
 
 /*------------------------
@@ -116,14 +125,13 @@ Header {
     font-weight: 400;
 }
 .watch-now {
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     color: white;
-    width: 168px;
-    height: 44px;
-    background-color: #E02C6D;
-    border: none;
-    
+    text-align: center;
+    margin-top: 27px;
+    padding: 11px 0; 
 }
 .sub-image-a img {
     width: 513px;
@@ -141,10 +149,16 @@ Header {
     align-items: center;
 }
 .logo img {
-    width: 480px;
+    width:650px;
     height: 110px;
 }
-.social-icon i {
+.social-icon a:hover .fab {
+    transform: scale(1.5, 1.5);  
+    text-decoration: none;
+}
+
+.social-icon .fab {
     width: 32px;
     height: 32px;
+    text-decoration: none;
 }
