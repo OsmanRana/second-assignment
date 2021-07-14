@@ -293,11 +293,16 @@ form input {
     .players {
         width: 600px;
         margin: 0px;  
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     /* Sub-section */
     .sub-section {
         width: 100%;
         margin: 0px;
+    }
+    .sub-section-a {
+        margin-left: 50PX;
     }
     .sub-image-a {
         margin-top: 130px;  
