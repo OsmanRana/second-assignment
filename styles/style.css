@@ -7,14 +7,14 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 1440px;
-    height: 3750px;
+    height: auto;
     background-color: rgba(236, 235, 235, 0.5);
 }
 Header {
     width: 1440px;
     height: 677px;
     background-color: #2D25A0;
-    animation: background-change 25s ease 0s infinite normal both;
+    animation: background-change 5s ease-in-out 0s infinite alternate none;
 }
 .button {
     display: inline-block;
@@ -43,6 +43,7 @@ Header {
     font-size: 64px;
     font-weight: 700;
     color: white;
+    
 }
 
 .watch-live {
@@ -117,7 +118,7 @@ Header {
     width: 466px;
     height: 309px;
 }
-.sub-heading-a {
+.sub-heading-title {
     font-size: 48px;
     font-weight: 700;
 }
@@ -137,6 +138,29 @@ Header {
 .sub-image-a img {
     width: 513px;
     height: 413px;
+}
+
+/* News Section */
+.sub-section-news {
+    width: 1050px;
+    margin: 0px 195px 165px 195px;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 70px;
+}
+.news-title {
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.sub-section-news img {
+    width: 300px;
+    height: 250px;
 }
 
 /*------------------------
@@ -168,9 +192,8 @@ Header {
         Animation
 ------------------------*/
 @keyframes background-change {
-    100% { background-color: #2D25A0;}
-    25% { background-color: #DD8C40;}
-    50% { background-color: #2D25A0;}
-    75% { background-color: #DD8C40;}  
-    0% { background-color: #2D25A0;}
+   
+    100% { background-color: lightskyblue;}
+    0% { background-color: #2D25A0;
+    } 
 }
