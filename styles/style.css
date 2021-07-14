@@ -152,6 +152,9 @@ Header {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 70px;
 }
+.news-a-description {
+    font-size: 16px;
+}
 .news-title {
     font-size: 16px;
     font-weight: 700;
@@ -162,7 +165,48 @@ Header {
     width: 300px;
     height: 250px;
 }
+/*------------------------
+        Form
+------------------------*/
+.subscriptoin-form {
+    width: 50%;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto 158px auto;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+form {
+    width: 50%;
+    height: auto;
+    
+    margin:  auto;
+    padding: 40px 0px 0px 0px;
+}
+form input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: gray;
+    padding-left: 3px;
+}
 
+
+.subscribe {
+    display: inline-block;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D; 
+    border: none;
+    margin-left: 40px;
+}
+.subscribe {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 11px 0;
+    
+}
 /*------------------------
         Footer
 ------------------------*/
@@ -172,6 +216,7 @@ Header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 158px;
 }
 .logo img {
     width:650px;
@@ -186,7 +231,14 @@ Header {
     width: 32px;
     height: 32px;
     text-decoration: none;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
+
+
 
 /*------------------------
         Animation
@@ -196,4 +248,83 @@ Header {
     100% { background-color: lightskyblue;}
     0% { background-color: #2D25A0;
     } 
+}
+
+/*------------------------
+        Media Query
+------------------------*/
+/* Small Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+    Header {
+        width: 100%;
+        height: 600px;
+        background-color: #2D25A0;
+        animation: background-change 5s ease-in-out 0s infinite alternate none;
+    }
+    .top-banner, .players, .sub-section, .sub-section-news, .news, .subscriptoin-form  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-banner {
+        width: 100%;
+        padding: 0px;
+    }
+    .top-section {
+        width: 278px;
+        height: 212px;
+    }
+    .main-heading {
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+    }
+    .watch-live {
+        margin: 0;
+    }
+    .main-image img {
+        width: 330px;
+        height: 260px;
+        margin-top: 80px;
+    }
+    .players {
+        width: 600px;
+        margin: 0px;
+        
+    }
+    .sub-section {
+        width: 100%;
+        margin: 0px;
+    }
+    .sub-image-a {
+        
+        margin-top: 130px;
+        
+    }
+    .news {
+        align-items: center;
+    }
+    .news img { 
+        width: 100%;
+        height: auto;
+    }
+    .sub-section-news {
+        width: 100%;
+        margin: 450px 0px 100px 0px;
+    }
+    .subscriptoin-form  {
+        height: auto;
+    }
+    .subscribe {
+        margin: 20px 0px;
+    }
+    .news-b {
+        width: 503.86px;
+    }
+    footer {
+        width: 100%;
+    }
 }
