@@ -45,7 +45,6 @@ Header {
     color: white;
     
 }
-
 .watch-live {
     text-decoration: none;
     font-size: 16px;
@@ -145,7 +144,6 @@ Header {
     width: 1050px;
     margin: 0px 195px 165px 195px;
 }
-
 .news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -157,17 +155,17 @@ Header {
 }
 .news-title {
     font-size: 16px;
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
-
 .sub-section-news img {
     width: 300px;
     height: 250px;
 }
+
 /*------------------------
         Form
 ------------------------*/
+
 .subscriptoin-form {
     width: 50%;
     height: 300px;
@@ -178,7 +176,6 @@ Header {
 form {
     width: 50%;
     height: auto;
-    
     margin:  auto;
     padding: 40px 0px 0px 0px;
 }
@@ -188,8 +185,6 @@ form input {
     color: gray;
     padding-left: 3px;
 }
-
-
 .subscribe {
     display: inline-block;
     width: 168px;
@@ -204,8 +199,7 @@ form input {
     font-weight: 500;
     color: white;
     text-align: center;
-    padding: 11px 0;
-    
+    padding: 11px 0;   
 }
 /*------------------------
         Footer
@@ -243,6 +237,7 @@ form input {
 /*------------------------
         Animation
 ------------------------*/
+
 @keyframes background-change {
    
     100% { background-color: lightskyblue;}
@@ -253,8 +248,11 @@ form input {
 /*------------------------
         Media Query
 ------------------------*/
+
 /* Small Devices */
 @media only screen and (max-width: 600px) {
+
+    /* General Queries */
     body {
         width: 600px;
     }
@@ -269,6 +267,7 @@ form input {
         flex-direction: column;
         align-items: center;
     }
+    /* Top banner */
     .top-banner {
         width: 100%;
         padding: 0px;
@@ -290,20 +289,24 @@ form input {
         height: 260px;
         margin-top: 80px;
     }
+    /* Players */
     .players {
         width: 600px;
-        margin: 0px;
-        
+        margin: 0px;  
     }
+    /* Sub-section */
     .sub-section {
         width: 100%;
         margin: 0px;
     }
     .sub-image-a {
-        
-        margin-top: 130px;
-        
+        margin-top: 130px;  
     }
+    .sub-image-a img {
+        width: 100%;
+        height: auto;
+    }
+    /* News */
     .news {
         align-items: center;
     }
@@ -313,18 +316,34 @@ form input {
     }
     .sub-section-news {
         width: 100%;
-        margin: 450px 0px 100px 0px;
+        margin: 500px 0px 100px 0px;
     }
+    .sub-heading-title {
+        margin: 0px;
+        font-size: 36px;
+    }
+    /* Form */
     .subscriptoin-form  {
+        width: 100%;
         height: auto;
     }
+    form {
+        width: 50%;
+      
+    }
     .subscribe {
-        margin: 20px 0px;
+        margin: 20px 0px 50px 0px;
     }
-    .news-b {
-        width: 503.86px;
+    .news-b img {
+        width: 100%;
+        height: auto;
     }
+    /* Footer */
     footer {
         width: 100%;
+    }
+    .logo img {
+        width: 100%;
+        height: auto;
     }
 }
